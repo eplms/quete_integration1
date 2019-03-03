@@ -1,0 +1,41 @@
+/* Modification de la taille de l'image dans la card de Abot the ring*/
+.imcard {
+    width:10%;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+/* Gestion du survol par la souris des cards*/
+.photo{
+    z-index:1;
+    opacity:0.5;
+}
+
+.reward{
+    z-index:2;
+    position:absolute;
+    padding-top:1.0rem;
+    padding-left:1.0rem;
+    border-width:1px;
+    border-style:solid;
+    border-color:white;
+    border-radius:10px;
+    background-color:rgba(255,255,255,0.5);
+    margin-top:6.0vh;
+    margin-left:1.0vh;
+    color: white;
+}
+.nom{
+    z-index:2;
+    position:absolute;
+    padding-top:16.0vh;
+    padding-left:6.0vh;
+    color:white;
+}
+.photo:hover{
+    opacity:1;
+}
+.card:hover .reward{
+display:none;
+}
